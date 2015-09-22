@@ -53,7 +53,7 @@ function onFail(message) {
 ordova 把移动端提供的各种服务都拆分成插件，因此，响应服务的接口调用只有在移动端支持的情况下才会有作用。  
 
 ###2.1.目前支持的插件 
-     Camera
+* Camera
 * Sms
 * Zbar（二维码扫描）
 * NetworkInformation
