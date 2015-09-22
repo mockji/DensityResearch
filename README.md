@@ -35,9 +35,7 @@
     }
 };
 app.initialize();
-
 * 设备初始化完毕后,便可以调用相应接口,以打开相机为例  
-
 <pre><code>
 function openCamera(){
     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
@@ -53,9 +51,8 @@ function onFail(message) {
     alert('Failed because: ' + message);
 }
 </code></pre>  
-
 ##2.插件的概念 
-ordova 把移动端提供的各种服务都拆分成插件，因此，响应服务的接口调用只有在移动端支持的情况下才会有作用。  
+cordova 把移动端提供的各种服务都拆分成插件，因此，响应服务的接口调用只有在移动端支持的情况下才会有作用。  
 
 ###2.1.目前支持的插件 
 * Camera
