@@ -34,9 +34,9 @@
         console.log('Received Event: ' + id);
     }
 };
-app.initialize();</code></pre>
-* 设备初始化完毕后,便可以调用相应接口,以打开相机为例
-<pre><code>function openCamera(){
+app.initialize();  
+<pre><code>
+function openCamera(){
     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
         destinationType: Camera.DestinationType.FILE_URI });
 }
@@ -46,7 +46,7 @@ function onSuccess(imageURI) {
     image.src = imageURI;
 }
 function onFail(message) {
-    alert('Failed because: ' + message
+    alert('Failed because: ' + message);
 }
 </code></pre>
 ##2.插件的概念 
