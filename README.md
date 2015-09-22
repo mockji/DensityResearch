@@ -34,7 +34,8 @@
         console.log('Received Event: ' + id);
     }
 };
-app.initialize();  
+app.initialize();</code></pre>  
+* 设备初始化完毕后,便可以调用相应接口,以打开相机为例  
 <pre><code>
 function openCamera(){
     navigator.camera.getPicture(onSuccess, onFail, { quality: 50,
